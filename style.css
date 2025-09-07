@@ -1,0 +1,152 @@
+.Overskriften {
+  color: rgb(183, 0, 255);
+  font-size: 50px;
+  font-weight: 400;
+  padding: 70px;
+  font-style: italic;
+
+  display: grid; /*Lager en grid, som gjør at jeg kan plassere ting på nettsiden*/
+  place-items: center; /*Legger overskriften på midten av siden*/
+}
+/*----------------------------Bakgrunn----------------------------------------*/
+body{
+  margin:0;
+  padding: 20px;
+  background: linear-gradient(rgb(147, 224, 255), rgb(167, 255, 186));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*----------------------------------------------------------------------------*/
+.Kort{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  justify-content: center; /*Sentrerer kortene, hvis de ikke fylles helt ut*/
+  margin: 40px;
+}
+
+.Ting{
+  background: pink;
+  border-radius: 12px;
+  box-shadow: 10px 10px rgb(147, 224, 255);
+  overflow: hidden;
+  text-align: center;
+  border: 5px #ffffff solid;
+
+  transition: transform 0,3 ease;
+
+}
+
+.Ting:hover{
+  transform: scale(1.05);
+}
+
+.Ting img{
+  padding: 20px;
+  width: 90%;
+  overflow: hidden;
+  height: auto;
+  object-fit: cover;
+}
+
+.Kort h2{
+  align-self: center;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  margin: auto;
+  background-color: rgb(255, 116, 139);
+}
+
+/*--------------------Navigasjonsbar-----------------------------------------*/
+ul{
+  list-style-type: none; /*Fjerner bullet points*/
+  margin: 0; /*Fjerer default nettleser margin*/
+  padding: 3px; /*Fjerner degault nettleser paddings*/
+  overflow: hidden; /*Skjuler alt som går utenfor elementets størrelse*/
+  background-color: rgb(255, 116, 139);
+}
+
+ul li{
+  float: left;
+}
+
+ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover{
+  background-color: pink;
+}
+
+ul li a.active{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 116, 139);
+}
+
+/*----------------------------------------------------------------------------*/
+
+
+.OverDel{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  justify-content: center; /*Sentrerer kortene, hvis de ikke fylles helt ut*/
+  margin: 40px;
+}
+
+.EnkeltTing{
+  background: pink;
+  border-radius: 12px;
+  box-shadow: 10px 10px rgb(147, 224, 255);
+  overflow: hidden;
+  text-align: center;
+  border: 5px #ffffff solid;
+
+  transition: transform 0,3 ease;
+
+}
+
+.EnkeltTing img{
+  padding: 20px;
+  width: 90%;
+  overflow: hidden;
+  height: auto;
+  object-fit: cover;
+}
+
+.OverDel h2{
+  align-self: center;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  margin: auto;
+  background-color: rgb(255, 116, 139);
+}
+
+.Liste {
+  background: pink;
+  text-align: center;
+  list-style-type:lower-alpha;
+  margin: auto;
+  overflow: auto;
+
+}
+
+ul{
+  list-style-type: none; /*Fjerner bullet points*/
+  margin: 0; /*Fjerer default nettleser margin*/
+  padding: 3px; /*Fjerner degault nettleser paddings*/
+  overflow: hidden; /*Skjuler alt som går utenfor elementets størrelse*/
+  background-color: rgb(255, 116, 139);
+  float: none;
+}
