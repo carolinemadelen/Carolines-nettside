@@ -49,8 +49,55 @@ body.SkoleBody{
   text-align: center;
   border: 5px #ffffff solid;
 
-  transition: transform 0,3 ease;
+  transition: transform 0.3 ease;
+}
 
+/*------------------------Kjøpt klasse ---------------------------------------*/
+
+.kjopt{
+
+  background: #e0e0e0;
+  border: 5px solid #bfbfbf;
+  box-shadow: 10px 10px  #9e9e9e;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  border: 5px #ffffff solid;
+
+  transition: transform 0.3 ease;
+}
+
+.kjopt:hover{
+  transform: scale(1.05);
+}
+
+.kjopt h2{
+  align-self: center;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  margin: auto;
+  background-color: rgb(160, 160, 160);
+}
+
+.kjopt::after{  /*pseudo-element legger tekst diagonalt*/
+  content: "KJØPT!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg); /*Sentrerer og skårstiller*/
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(0,0,0,0.15);
+  white-space: nowrap;
+  pointer-events: none; /*Så den ikke blokker for link*/
+}
+
+.kjopt img{
+  filter: grayscale(100%);  /*Gjør bildet som er kjøpt svart hvitt*/
 }
 
 .Ting:hover{
@@ -65,7 +112,7 @@ body.SkoleBody{
   object-fit: cover;
 }
 
-.Kort h2{
+.Ting h2{
   align-self: center;
   color: white;
   padding: 20px;
@@ -75,6 +122,8 @@ body.SkoleBody{
   margin: auto;
   background-color: rgb(255, 116, 139);
 }
+
+
 
 /*--------------------Navigasjonsbar-----------------------------------------*/
 ul{
